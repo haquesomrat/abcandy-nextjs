@@ -1,11 +1,19 @@
 import "bootstrap/dist/css/bootstrap.css";
+import "./globals.css";
+import Navbar from "@/components/navbar";
+import Hero from "@/components/hero";
+import Featured from "@/components/featured";
 
-const page = () => {
+const Homepage = () => {
   return (
-    <div>
-      <p className="text-danger">This is my next project</p>
-    </div>
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <Featured />
+      </main>
+    </>
   );
 };
 
-export default page;
+export default Homepage;
