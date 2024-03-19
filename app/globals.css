@@ -58,10 +58,22 @@ header {
   padding: 0;
   line-height: 1;
 }
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 .offcanvas-lg {
+  position: absolute;
   width: 100% !important;
   background-color: rgb(245, 244, 251);
+}
+.offcanvas-backdrop,
+.offcanvas-lg {
   margin-top: 4rem;
+}
+.offcanvas-backdrop.show {
+  opacity: 0 !important;
 }
 /*?--------------------------------------------------------- Hero section  */
 .splide__slide .card {

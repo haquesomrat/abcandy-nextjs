@@ -53,62 +53,14 @@ const Navbar = () => {
               &#9776;
             </button>
             {/* offcanvas */}
-            <div
-              className="offcanvas offcanvas-end"
-              data-bs-scroll="true"
-              data-bs-backdrop="false"
-              tabindex="-1"
-              id="offcanvasRight"
-              aria-labelledby="offcanvasRightLabel"
-            >
-              <div className="offcanvas-body" id="offcanvasRightLabel">
-                <ul className="nav-list text-center">
-                  <li className="nav-item">
-                    <a href="#" className="nav-link">
-                      About
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a href="#" className="nav-link">
-                      Services
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a href="#" className="nav-link">
-                      What&apos;s new?
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a href="#" className="nav-link">
-                      Community
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a href="#" className="nav-link">
-                      Blog
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a
-                      href="#"
-                      className="bg-con-btn text-light py-2"
-                      data-bs-toggle="modal"
-                      data-bs-target="#staticBackdrop"
-                    >
-                      Contact Us
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            {/* new */}
             <Offcanvas
               show={show}
               onHide={handleClose}
               placement="end"
               responsive="lg"
+              scroll="false"
             >
-              <Offcanvas.Body>
+              <Offcanvas.Body className="d-lg-none">
                 <ul className="nav-list text-center">
                   <li className="nav-item">
                     <a href="#" className="nav-link">

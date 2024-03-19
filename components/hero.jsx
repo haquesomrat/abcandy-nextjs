@@ -4,43 +4,48 @@ import React from "react";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 import HeroCard from "./heroCard";
+import slide1 from "@/public/slide1.jpg";
+import slide2 from "@/public/slide2.jpg";
+import slide3 from "@/public/slide3.jpg";
+
+const HeroImages = [slide1, slide2, slide1, slide3];
+const heroCarouselOptions = {
+  type: "loop",
+  perMove: 1,
+  speed: 800,
+  updateOnMove: true,
+  gap: "1.875rem",
+  padding: "1rem",
+  autoplay: "play",
+  focus: "center",
+  arrows: false,
+  scroll: {
+    duration: 0.3,
+  },
+  mediaQuery: "min",
+  breakpoints: {
+    576: {
+      arrows: true,
+      arrows: {
+        prev: {
+          className: "splide__arrow--prev splide__arrow--focus",
+        },
+        next: {
+          className: "splide__arrow--next splide__arrow--focus",
+        },
+      },
+      padding: "10%",
+      gap: "1rem",
+    },
+    768: {
+      padding: "15%",
+      gap: ".5rem",
+    },
+    992: { padding: "20%", gap: "1.875rem" },
+  },
+};
 
 const Hero = () => {
-  const heroCarouselOptions = {
-    type: "loop",
-    perMove: 1,
-    speed: 800,
-    updateOnMove: true,
-    gap: "1.875rem",
-    padding: "1rem",
-    // autoplay: "play",
-    focus: "center",
-    arrows: false,
-    scroll: {
-      duration: 0.3,
-    },
-    mediaQuery: "min",
-    breakpoints: {
-      576: {
-        arrows: true,
-        arrows: {
-          prev: {
-            className: "splide__arrow--prev splide__arrow--focus",
-          },
-          next: {
-            className: "splide__arrow--next splide__arrow--focus",
-          },
-        },
-        padding: "10%",
-        gap: "1rem",
-      },
-      768: {
-        padding: "15%",
-        gap: ".5rem",
-      },
-      992: { padding: "20%", gap: "1.875rem" },
-    },
-  };
   return (
     <section className="hero">
       <div className="hero-bg-content">
@@ -51,7 +56,7 @@ const Hero = () => {
           className="hero-bg"
         />
       </div>
-      <div className="carousel-container">
+      <div className="carousel-container hero-carousel">
         <Splide
           hasTrack={false}
           options={heroCarouselOptions}
@@ -59,18 +64,11 @@ const Hero = () => {
         >
           {/* splide content */}
           <SplideTrack>
-            <SplideSlide>
-              <HeroCard />
-            </SplideSlide>
-            <SplideSlide>
-              <HeroCard />
-            </SplideSlide>
-            <SplideSlide>
-              <HeroCard />
-            </SplideSlide>
-            <SplideSlide>
-              <HeroCard />
-            </SplideSlide>
+            {HeroImages.map((HeroImg) => (
+              <SplideSlide key={HeroImg}>
+                <HeroCard HeroImg={HeroImg} />
+              </SplideSlide>
+            ))}
           </SplideTrack>
           {/* splide arrows */}
           <div className="splide__arrows">

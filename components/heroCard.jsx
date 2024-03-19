@@ -1,12 +1,12 @@
 import Image from "next/image";
 import React from "react";
-import slide1 from "@/public/slide1.jpg";
+// import slide1 from "@/public/slide1.jpg";
 
-const HeroCard = () => {
+const HeroCard = ({ HeroImg }) => {
   return (
     <div className="card">
       <div className="card-img-content">
-        <Image className="ab-card-img" src={slide1} alt="Image 2" />
+        <Image className="ab-card-img" src={HeroImg} alt="Image 2" />
       </div>
       <div className="card-text-content">
         <div className="card-text-top">
