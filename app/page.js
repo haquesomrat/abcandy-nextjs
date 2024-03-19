@@ -1,8 +1,10 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "./globals.css";
-import Navbar from "@/components/navbar";
-import Hero from "@/components/hero";
-import Featured from "@/components/featured";
+import Navbar from "@/components/Navbar/navbar";
+import Featured from "@/components/Featured/featured";
+import Hero from "@/components/Hero/hero";
+import TeamBanner from "@/components/TeamBanner/teamBanner";
+import Blogs from "@/components/Blogs/Blogs";
 
 const Homepage = () => {
   return (
@@ -11,6 +13,8 @@ const Homepage = () => {
       <main>
         <Hero />
         <Featured />
+        <TeamBanner />
+        <Blogs />
       </main>
     </>
   );

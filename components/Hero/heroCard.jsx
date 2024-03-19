@@ -1,17 +1,18 @@
 import Image from "next/image";
 import React from "react";
-// import slide1 from "@/public/slide1.jpg";
 
 const HeroCard = ({ HeroImg }) => {
   return (
     <div className="card">
+      {/* card image content */}
       <div className="card-img-content">
         <Image className="ab-card-img" src={HeroImg} alt="Image 2" />
       </div>
+      {/* card text content */}
       <div className="card-text-content">
         <div className="card-text-top">
-          <span className="card-type">Design & creative</span>
-          <span className="card-date">10 June 2023</span>
+          <span className="card-type">Graphics Design</span>
+          <span className="card-date">16 July 2023</span>
         </div>
         <div className="card-mid">
           <h4 className="card-headline text-truncate">
