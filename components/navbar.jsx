@@ -2,8 +2,8 @@ import Image from "next/image";
 import React from "react";
 import brandLogo from "@/public/brand-logo.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
-import SidebarOffcanvas from "./sidebarOffcanvas";
-import ContactModal from "../Shared/contactModal";
+import SidebarOffcanvas from "./Shared/sidebarOffcanvas";
+import ContactModal from "./Shared/contactModal";
 import Link from "next/link";
 
 const Navbar = () => {

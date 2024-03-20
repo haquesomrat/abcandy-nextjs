@@ -1,4 +1,4 @@
-import ContactModal from "../Shared/contactModal";
+import ContactModal from "./Shared/contactModal";
 
 const TeamBanner = () => {
   return (

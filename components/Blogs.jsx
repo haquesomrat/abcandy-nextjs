@@ -1,7 +1,7 @@
 import React from "react";
-import WideBlogCard from "./wideBlogCard";
-import LongBlogCard from "./longBlogCard";
-import BlogCards from "./BlogCards";
+import WideBlogCard from "./Shared/wideBlogCard";
+import LongBlogCard from "./Shared/longBlogCard";
+import BlogCards from "./Shared/BlogCards";
 
 const Blogs = () => {
   return (

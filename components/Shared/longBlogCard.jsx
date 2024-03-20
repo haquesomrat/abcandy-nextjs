@@ -1,7 +1,7 @@
 import Image from "next/image";
 import robotBanner from "@/public/robot-banner.png";
 import React from "react";
-import ContactModal from "../Shared/contactModal";
+import ContactModal from "./contactModal";
 
 const LongBlogCard = () => {
   return (

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import CardTopText from "../Featured/cardTopText";
+import CardTopText from "./cardTopText";
 
 const BlogCard = ({ blogImg }) => {
   return (

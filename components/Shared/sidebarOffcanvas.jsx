@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Offcanvas } from "react-bootstrap";
-import ContactModal from "../Shared/contactModal";
+import ContactModal from "./contactModal";
 
 const SidebarOffcanvas = () => {
   const [showModal, setShowModal] = useState(false);

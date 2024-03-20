@@ -1,8 +1,8 @@
 import React from "react";
-import BlogTabs from "./blogTabs";
-import BlogSearch from "./blogSearch";
-import FeatureCarouselCard from "./FeatureCarouselCard";
-import FeatureCard from "./FeatureCard";
+import BlogTabs from "./Shared/blogTabs";
+import BlogSearch from "./Shared/blogSearch";
+import FeatureCarouselCard from "./Shared/FeatureCarouselCard";
+import FeatureCard from "./Shared/FeatureCard";
 
 const Featured = () => {
   return (

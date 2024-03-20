@@ -3,7 +3,7 @@ import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 import slide1 from "@/public/slide1.jpg";
 import slide2 from "@/public/slide2.jpg";
 import slide3 from "@/public/slide3.jpg";
-import HeroCarousel from "./heroCarousel";
+import HeroCarousel from "./Shared/heroCarousel";
 
 const HeroImages = [slide1, slide2, slide1, slide3];
 const heroCarouselOptions = {

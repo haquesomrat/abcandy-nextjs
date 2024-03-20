@@ -1,11 +1,11 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "./globals.css";
-import Navbar from "@/components/Navbar/navbar";
-import Featured from "@/components/Featured/featured";
-import Hero from "@/components/Hero/hero";
-import TeamBanner from "@/components/TeamBanner/teamBanner";
-import Blogs from "@/components/Blogs/Blogs";
-import Footer from "@/components/Footer/Footer";
+import Navbar from "@/components/navbar";
+import Featured from "@/components/featured";
+import Hero from "@/components/hero";
+import TeamBanner from "@/components/teamBanner";
+import Blogs from "@/components/Blogs";
+import Footer from "@/components/Footer";
 
 const Homepage = () => {
   return (

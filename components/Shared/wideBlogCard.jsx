@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import CardTopText from "../Featured/cardTopText";
-import BlogModal from "../Featured/blogModal";
+import CardTopText from "./cardTopText";
+import BlogModal from "./blogModal";
 import blog3 from "@/public/blog-3.png";
 
 const WideBlogCard = () => {

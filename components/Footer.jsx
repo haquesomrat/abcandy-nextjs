@@ -1,5 +1,5 @@
 import React from "react";
-import FooterSocials from "./FooterSocials";
+import FooterSocials from "./Shared/FooterSocials";
 
 const Footer = () => {
   return (
