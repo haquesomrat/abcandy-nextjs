@@ -5,7 +5,7 @@ const TeamBanner = () => {
     <section className="team mb-5 container ">
       <div
         className="team-bg"
-        style={{ backgroundImage: "url('/team-bg.png')" }}
+        style={{ backgroundImage: "url('./team-bg.png')" }}
       ></div>
       <div className="team-content container">
         <div className="blur-bg">

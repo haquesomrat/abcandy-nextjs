@@ -49,7 +49,7 @@ const Hero = () => {
       <div className="hero-bg-content">
         <div
           style={{
-            backgroundImage: "url('/site-bg.svg')",
+            backgroundImage: "url('./site-bg.svg')",
           }}
           className="hero-bg"
         />
