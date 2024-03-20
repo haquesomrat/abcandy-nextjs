@@ -1,15 +1,6 @@
-"use client";
-import { useState } from "react";
 import ContactModal from "../Shared/contactModal";
 
 const TeamBanner = () => {
-  const [showModal, setShowModal] = useState(false);
-
-  //Handle Modal Close
-  const handleCloseModal = () => setShowModal(false);
-  //Hanle Modal Open
-  const handleShowModal = () => setShowModal(true);
-
   return (
     <section className="team mb-5 container ">
       <div
@@ -24,17 +15,11 @@ const TeamBanner = () => {
             consectetur cras in nulla. Non suspendisse at ac enim. Facilisi
             nulla tortor nec mollis faucibus odio sodales.
           </p>
-          <button
-            className="team-btn btn-lg border-0"
-            onClick={handleShowModal}
-          >
-            Let&apos;s Talk
-          </button>
           {/*Contact Modal */}
           <ContactModal
-            showModal={showModal}
-            handleCloseModal={handleCloseModal}
-          />
+            className={{ button: "team-btn border-0 btn-lg " }}
+            btnText=" Let's Talk"
+          ></ContactModal>
         </div>
       </div>
     </section>

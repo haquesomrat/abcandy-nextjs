@@ -1,24 +1,12 @@
-"use client";
 import Image from "next/image";
 import React from "react";
 import brandLogo from "@/public/brand-logo.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { useState } from "react";
 import SidebarOffcanvas from "./sidebarOffcanvas";
 import ContactModal from "../Shared/contactModal";
 import Link from "next/link";
 
 const Navbar = () => {
-  const [showModal, setShowModal] = useState(false);
-  const [show, setShow] = useState(false);
-
-  //Handle Modal Close
-  const handleCloseModal = () => setShowModal(false);
-  //Hanle Modal Open
-  const handleShowModal = () => setShowModal(true);
-  //Handle Sidebar Toogle
-  const handleToggle = () => setShow(!show);
-
   return (
     <header className="header">
       <nav className="nav-bar container">
@@ -50,16 +38,8 @@ const Navbar = () => {
               <Image src={brandLogo} alt="brand logo" className="logo" />
             </Link>
 
-            {/* SideBar */}
-            <button
-              onClick={handleToggle}
-              className="btn d-lg-none toggle-btn"
-              type="button"
-            >
-              &#9776;
-            </button>
             {/*Sidebar offcanvas */}
-            <SidebarOffcanvas show={show} handleShowModal={handleShowModal} />
+            <SidebarOffcanvas />
           </div>
           {/* Right Nav Items */}
           <div className="col-lg-4">
@@ -74,21 +54,15 @@ const Navbar = () => {
                   Blog
                 </a>
               </li>
-              <li
-                onClick={handleShowModal}
-                className="nav-item bg-con-btn mx-xxl-2 d-flex align-items-center"
-              >
-                <a href="#" className="nav-link btn text-light">
-                  Contact Us
-                </a>
+              <li className="nav-item bg-con-btn mx-xxl-2 d-flex align-items-center">
+                {/*Contact Modal */}
+                <ContactModal
+                  className={{ button: "nav-link btn text-light" }}
+                  btnText="Contact Us"
+                ></ContactModal>
               </li>
             </ul>
           </div>
-          {/*Contact Modal */}
-          <ContactModal
-            showModal={showModal}
-            handleCloseModal={handleCloseModal}
-          />
         </div>
       </nav>
     </header>

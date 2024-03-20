@@ -5,6 +5,7 @@ import Featured from "@/components/Featured/featured";
 import Hero from "@/components/Hero/hero";
 import TeamBanner from "@/components/TeamBanner/teamBanner";
 import Blogs from "@/components/Blogs/Blogs";
+import Footer from "@/components/Footer/Footer";
 
 const Homepage = () => {
   return (
@@ -16,6 +17,7 @@ const Homepage = () => {
         <TeamBanner />
         <Blogs />
       </main>
+      <Footer />
     </>
   );
 };

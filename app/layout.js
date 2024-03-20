@@ -1,4 +1,5 @@
 import "./globals.css";
+import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 
 export const metadata = {
   title: "ABCANDY",
