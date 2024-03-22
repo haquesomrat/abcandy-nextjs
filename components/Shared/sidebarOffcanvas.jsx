@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Offcanvas } from "react-bootstrap";
 import ContactModal from "./contactModal";
 
@@ -10,6 +10,14 @@ const SidebarOffcanvas = () => {
   const handleCloseModal = () => setShowModal(false);
   const handleShowModal = () => setShowModal(true);
   const handleToggle = () => setShow(!show);
+
+  useEffect(() => {
+    if (show) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [show]);
   return (
     <>
       <button
