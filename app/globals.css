@@ -211,7 +211,6 @@ header {
 .splide__pagination li {
   background-color: white;
   padding: 0.0125rem;
-  margin: 0.25rem;
 }
 .hero-carousel .splide__pagination li:first-child {
   border-radius: 5rem 0 0 5rem;
