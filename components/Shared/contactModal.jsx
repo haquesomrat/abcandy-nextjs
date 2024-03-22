@@ -20,6 +20,7 @@ const ContactModal = ({ className, btnText = "" }) => {
         className="contact-modal"
         show={showModal}
         onHide={handleCloseModal}
+        centered
       >
         <Modal.Header closeButton closeVariant="white">
           <h1 className="modal-title" id="staticBackdropLabel">

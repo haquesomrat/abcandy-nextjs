@@ -59,7 +59,7 @@ const SidebarOffcanvas = () => {
             <li className="nav-item">
               {/*Contact Modal */}
               <ContactModal
-                className={{ button: "bg-con-btn text-light py-2" }}
+                className={{ button: "bg-con-btn border-0 text-light py-2" }}
                 btnText="Contact Us"
               ></ContactModal>
             </li>

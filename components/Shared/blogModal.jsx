@@ -15,7 +15,12 @@ const BlogModal = ({ className, btnText, children = "" }) => {
         {btnText}
         {children}
       </button>
-      <Modal className="videoModal" show={showModal} onHide={handleCloseModal}>
+      <Modal
+        className="videoModal"
+        show={showModal}
+        onHide={handleCloseModal}
+        centered
+      >
         <Modal.Header closeButton closeVariant="white"></Modal.Header>
         <Modal.Body>
           <div className="video-content">

@@ -469,7 +469,6 @@ header {
 .modal.show .modal-dialog {
   max-width: 576px;
   height: auto;
-  top: calc(100% - 81%);
 }
 .contact-modal .modal-content {
   border-radius: 0;
